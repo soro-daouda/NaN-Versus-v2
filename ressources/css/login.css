@@ -1,0 +1,212 @@
+/*------------------------
+        FONTS ********************************************* */
+      
+/*-------------------------------------------------------------*/
+
+:root {
+    --color-grey:#e8e8e8;
+    --color-dark:#3A3A3A;
+    --color-purple:#777FFE;
+}
+
+/* ******************************************** */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-grey);
+
+}
+
+.formContent{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.formBox{
+    width: 40rem;
+    min-height: 40rem;
+    background: white;
+    padding: 1rem;
+    border-radius: .3rem;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.editorpoint li{
+    display: inline-block;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.editorpoint li.red{
+    background: #fe5e57;
+}
+
+.editorpoint li.yellow{
+    background: #ffbc2c;
+}
+
+.editorpoint li.green{
+    background: #29c83f;
+}
+
+.formBox form{
+    padding: 3rem;
+}
+
+.logo{
+    height: 10rem;
+    width: 10rem;
+}
+
+.formBox h1{
+    text-align: center;
+    color: var(--color-purple);
+    font-size: 3rem;
+    margin-bottom: 6rem;
+}
+
+.formBox input{
+    width: 100%;
+    height: 3.5rem;
+    border: none;
+    border-bottom: 1px solid var(--color-dark);
+    font-size: 1.6rem;
+    color: var(--color-dark);
+    transition: .5s;
+}
+
+.formBox input:focus,
+.formBox button:focus{
+    outline: none;
+    border-bottom: 1px solid var(--color-purple);
+}
+
+input::placeholder{
+    color: var(--color-dark);
+}
+
+.inputform1{
+    margin-bottom: 3rem;
+}
+
+.inputform1,
+.inputform2{
+    display: flex;
+}
+
+.formBox input[type="email"],
+.formBox input[type="password"]{
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.formBox input[type="email"]{
+    background-image: url('../images/flatIcon/user 2.svg'); 
+}
+
+.formBox input[type="password"]{
+    background-image: url('../images/flatIcon/lockborder.svg');
+}
+
+.btncenter{
+    text-align: center;
+}
+
+.formBox button{
+    width: 70%;
+    height: 4rem;
+    padding: 0 2rem;
+    cursor: pointer;
+    margin-top: 5rem;
+    font-size: 1.8rem;
+    border: 1px solid var(--color-purple);
+    background: var(--color-purple);
+    color: white;
+    transition: all .3s;
+    transform: skew(-10deg);
+}
+
+.formBox button:hover{
+    border: 1px solid var(--color-purple);
+    background: white;
+    color: var(--color-purple);
+}
+
+.formBox p{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.formBox p a{
+    color: var(--color-dark);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.formBox p a:hover{
+    text-decoration: underline;
+    transition: all .4s;
+}
+
+
+@media screen and (max-width: 450px){
+    .formBox{
+        width: 35rem;
+        min-height: 35rem;
+    }
+
+    .formBox h1{
+        margin-bottom: 4rem;
+    }
+
+    .formBox form{
+        padding: 2rem;
+    }
+
+    .logo{
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .formBox h1{
+        font-size: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .formBox input{
+        font-size: 1.4rem;
+    }
+
+    .formBox p{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .formBox{
+        width: 30rem;
+        min-height: 30rem;
+    }
+
+    .formBox h1{
+        margin-bottom: 2rem;
+    }
+}
