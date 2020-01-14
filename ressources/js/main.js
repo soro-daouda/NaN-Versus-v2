@@ -14,6 +14,12 @@ $('#control-btn').on('click', function(){
 })
 
 
+// dropdown profil photo
+$('.photoProfil').on('click', function(){
+    $('#profil-list').slideToggle();
+})
+
+
 // sidebar  
 
 $('.btn-sidebar').click(function(){
@@ -51,4 +57,3 @@ function lightBackground(){
     bgDark.style.background = "#e8e8e8";
     bgDark.style.color = "#3A3A3A";
 }
-
