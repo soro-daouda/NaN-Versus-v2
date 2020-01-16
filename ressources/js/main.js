@@ -20,6 +20,12 @@ $('.photoProfil').on('click', function(){
 })
 
 
+// dropdown Notification
+$('.iconNotification').on('click', function(){
+    $('#notification-list').slideToggle();
+})
+
+
 // sidebar  
 
 $('.btn-sidebar').click(function(){

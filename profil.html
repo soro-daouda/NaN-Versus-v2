@@ -46,6 +46,56 @@
                     <img src="ressources/images/flatIcon/notification.svg" alt="notification" class="notification">
                 </a>
             </span>
+
+            <div id="notification-list">
+                <ul>
+                    <li>
+                        <div class="drop-img">
+                            <img src="ressources/images/flatIcon/photo.png" alt="">
+                            <p>
+                                zed-junior <br>
+                                <!-- date de reception demande battle -->
+                                <small>16/01/2020</small>
+                            </p>
+                        </div>
+                        <div>
+                            <button type="submit" class="refus">Refuser</button>
+                            <button type="submit" class="accepte">Accepter</button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="drop-img">
+                            <img src="ressources/images/flatIcon/photo.png" alt="">
+                            <p>
+                                zed-junior <br>
+                                <!-- date de reception demande battle -->
+                                <small>16/01/2020</small>
+                            </p>
+                        </div>
+                        <div>
+                            <button type="submit" class="refus">Refuser</button>
+                            <button type="submit" class="accepte">Accepter</button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="drop-img">
+                            <img src="ressources/images/flatIcon/photo.png" alt="">
+                            <p>
+                                zed-junior <br>
+                                <!-- date de reception demande battle -->
+                                <small>16/01/2020</small>
+                            </p>
+                        </div>
+                        <div>
+                            <button type="submit" class="refus">Refuser</button>
+                            <button type="submit" class="accepte">Accepter</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
             <img src="ressources/images/flatIcon/photo.png" alt="" class="photoProfil">
             <div id="profil-list">
                 <ul>
@@ -63,16 +113,33 @@
                         <form action="" class="form-container">
                             <h1>Modifier mon profil</h1>
 
-                            <label for="username"><b>Email</b></label>
-                            <input type="text" value="zed-junior" name="username" required>
-                        
-                            <label for="email"><b>Email</b></label>
-                            <input type="text" value="zed-junior@gmail.com" name="email" required>
-                        
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" value="************" name="psw" required>
+                            <div class="wrapper-block">
+                                <input type="file" id="file">
+                            </div>
 
-                            <button type="button">Modifier</button>
+                            <div>
+                                <label for="username">Nom utilisateur</label> <br>
+                                <input type="text" value="zed-junior" name="username" required class="finput">
+                            </div>
+                        
+                            <div>
+                                <label for="email">Email</label> <br>
+                                <input type="text" value="zed-junior@gmail.com" name="email" required class="finput">
+                            </div>
+                        
+                            <div>
+                                <label for="psw">Mot de Passe</label> <br>
+                                <input type="password" value="************" name="psw" required class="finput">
+                            </div>
+
+                            <div>
+                                <label for="psw">Confirmer Mot de Passe</label> <br>
+                                <input type="password" value="************" name="psw" required class="finput">
+                            </div>
+
+                            <div>
+                                <button type="button">Modifier</button>
+                            </div>
                         
                         </form>
                         
@@ -91,186 +158,273 @@
             <input type="text" placeholder="Rechercher" onkeyup="myFunction()" id="myInput">
         </form>
         <div class="userConnect">
-            <ul id="myUL">
-                <div class="left">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
-                            <div class="connect"></div>
-                        </a>
-                    </li>
-                    <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
+            <div class="test">
+                <ul id="myUL">
+                    <div class="left">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
+                                <div class="connect"></div>
+                            </a>
+                        </li>
+                        <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
+            
+                    </div>
+                    
+                    <div class="right">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
+                            </a>
+                        </li>
+                    </div>
+                </ul>
         
+                <!-- button demande battle -->
+                <div class="demande-battle">
+                    <button class="button button--success" data-for="js_success-popup">Demander Battle</button>
                 </div>
-                
-                <div class="right">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
-                        </a>
-                    </li>
-                </div>
-            </ul>
-            <ul id="myUL">
-                <div class="left">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
-                            <div class="connect"></div>
-                        </a>
-                    </li>
-                    <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
+            </div>
+            
+            <div class="test">
+                <ul id="myUL">
+                    <div class="left">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
+                                <div class="connect"></div>
+                            </a>
+                        </li>
+                        <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
+            
+                    </div>
+                    
+                    <div class="right">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
+                            </a>
+                        </li>
+                    </div>
+                </ul>
         
+                <!-- button demande battle -->
+                <div class="demande-battle">
+                    <button class="button button--success" data-for="js_success-popup">Demander Battle</button>
                 </div>
-                
-                <div class="right">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
-                        </a>
-                    </li>
-                </div>
-            </ul>
-            <ul id="myUL">
-                <div class="left">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
-                            <div class="connect"></div>
-                        </a>
-                    </li>
-                    <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
+            </div>
+
+            <div class="test">
+                <ul id="myUL">
+                    <div class="left">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
+                                <div class="connect"></div>
+                            </a>
+                        </li>
+                        <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
+            
+                    </div>
+                    
+                    <div class="right">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
+                            </a>
+                        </li>
+                    </div>
+                </ul>
         
+                <!-- button demande battle -->
+                <div class="demande-battle">
+                    <button class="button button--success" data-for="js_success-popup">Demander Battle</button>
                 </div>
-                
-                <div class="right">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
-                        </a>
-                    </li>
-                </div>
-            </ul>
-            <ul id="myUL">
-                <div class="left">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
-                            <div class="connect"></div>
-                        </a>
-                    </li>
-                    <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
+            </div>
+
+            <div class="test">
+                <ul id="myUL">
+                    <div class="left">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
+                                <div class="connect"></div>
+                            </a>
+                        </li>
+                        <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
+            
+                    </div>
+                    
+                    <div class="right">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
+                            </a>
+                        </li>
+                    </div>
+                </ul>
         
+                <!-- button demande battle -->
+                <div class="demande-battle">
+                    <button class="button button--success" data-for="js_success-popup">Demander Battle</button>
                 </div>
-                
-                <div class="right">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
-                        </a>
-                    </li>
-                </div>
-            </ul>
-            <ul id="myUL">
-                <div class="left">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
-                            <div class="connect"></div>
-                        </a>
-                    </li>
-                    <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
+            </div>
+
+            <div class="test">
+                <ul id="myUL">
+                    <div class="left">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
+                                <div class="connect"></div>
+                            </a>
+                        </li>
+                        <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
+            
+                    </div>
+                    
+                    <div class="right">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
+                            </a>
+                        </li>
+                    </div>
+                </ul>
         
+                <!-- button demande battle -->
+                <div class="demande-battle">
+                    <button class="button button--success" data-for="js_success-popup">Demander Battle</button>
                 </div>
-                
-                <div class="right">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
-                        </a>
-                    </li>
+            </div>
+
+            <div class="test">
+                <ul id="myUL">
+                    <div class="left">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
+                                <div class="disconnect"></div>
+                            </a>
+                        </li>
+                        <li class="nameUser"><a href="#">User45 Hamdan Lamia</a></li>
+            
+                    </div>
+                    
+                    <div class="right">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+                <!-- button demande battle -->
+                <div class="demande-battle">
+                    <button class="button button--success" data-for="js_success-popup">Demander Battle</button>
                 </div>
-            </ul>
-            <ul id="myUL">
-                <div class="left">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
-                            <div class="disconnect"></div>
-                        </a>
-                    </li>
-                    <li class="nameUser"><a href="#">User45 Hamdan Lamia</a></li>
+            </div>
+            
+            <div class="test">
+                <ul id="myUL">
+                    <div class="left">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
+                                <div class="connect"></div>
+                            </a>
+                        </li>
+                        <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
+            
+                    </div>
+                    
+                    <div class="right">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
+                            </a>
+                        </li>
+                    </div>
+                </ul>
         
+                <!-- button demande battle -->
+                <div class="demande-battle">
+                    <button class="button button--success" data-for="js_success-popup">Demander Battle</button>
                 </div>
-                
-                <div class="right">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
-                        </a>
-                    </li>
+            </div>
+
+            <div class="test">
+                <ul id="myUL">
+                    <div class="left">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
+                                <div class="disconnect"></div>
+                            </a>
+                        </li>
+                        <li class="nameUser"><a href="#">User45 Hamdan Lamia</a></li>
+            
+                    </div>
+                    
+                    <div class="right">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+                <!-- button demande battle -->
+                <div class="demande-battle">
+                    <button class="button button--success" data-for="js_success-popup">Demander Battle</button>
                 </div>
-            </ul>
-            <ul id="myUL">
-                <div class="left">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
-                            <div class="connect"></div>
-                        </a>
-                    </li>
-                    <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
+            </div>
+
+            <div class="test">
+                <ul id="myUL">
+                    <div class="left">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
+                                <div class="connect"></div>
+                            </a>
+                        </li>
+                        <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
+            
+                    </div>
+                    
+                    <div class="right">
+                        <li>
+                            <a href="#">
+                                <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
+                            </a>
+                        </li>
+                    </div>
+                </ul>
         
+                <!-- button demande battle -->
+                <div class="demande-battle">
+                    <button class="button button--success" data-for="js_success-popup">Demander Battle</button>
                 </div>
-                
-                <div class="right">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
-                        </a>
-                    </li>
-                </div>
-            </ul>
-            <ul id="myUL">
-                <div class="left">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
-                            <div class="disconnect"></div>
-                        </a>
-                    </li>
-                    <li class="nameUser"><a href="#">User45 Hamdan Lamia</a></li>
-        
-                </div>
-                
-                <div class="right">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
-                        </a>
-                    </li>
-                </div>
-            </ul>
-            <ul id="myUL">
-                <div class="left">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/photo.png" class="photoUser" alt="">
-                            <div class="connect"></div>
-                        </a>
-                    </li>
-                    <li class="nameUser"><a href="#">User15 Zed Junior</a></li>
-        
-                </div>
-                
-                <div class="right">
-                    <li>
-                        <a href="#">
-                            <img src="ressources/images/flatIcon/battle.svg" class="icons icon1" alt="">
-                        </a>
-                    </li>
-                </div>
-            </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Popup battle  envoyer -->
+
+    <div class="popup popup--icon -success js_success-popup">
+        <div class="popup__background"></div>
+        <div class="popup__content">
+            <h3 class="popup__content__title">
+                Demande Envoyée Avec Succès
+            </h3>
+            <p>Appretez-vous bien pour affronter votre adversaire :)</p>
+            <p>
+                <button class="button button--success" data-for="js_success-popup">OK</button>
+            </p>
         </div>
     </div>
 
@@ -305,6 +459,7 @@
                 </div>
 
             </div>
+
             <div class="actif">
                 <h1>Battles Passés</h1>
             </div>
@@ -747,9 +902,18 @@
                         }
                     }
                 });
-                }
+            }
         
         })();
+
+        const addButtonTrigger = (el) => {
+            el.addEventListener('click', () => {
+                const popupEl = document.querySelector(`.${el.dataset.for}`);
+                popupEl.classList.toggle('popup--visible');
+            });
+        };
+        
+        Array.from(document.querySelectorAll('button[data-for]')).forEach(addButtonTrigger); 
     </script>
 
     </div>  
