@@ -1780,7 +1780,7 @@ input::placeholder{
     display: flex;
     flex-direction: row;
     touch-action: none;
-    height: 55rem;
+    /* height: 55rem; */
 }
 
 
